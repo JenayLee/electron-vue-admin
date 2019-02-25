@@ -1,0 +1,33 @@
+@disabled-color : rgba(0, 0, 0, .25);
+.custom-login-wraper {
+  width: 100%;
+  height: 100%;
+  background-image: url('/src/renderer/assets/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .custom-particles {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+  }
+
+  .custom-login-form {
+    width: 350px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+    top: 20%;
+    padding: 30px 15px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .5);
+    .ant-input-prefix{
+      color: @disabled-color;
+    }
+  }
+
+  .custom-form-fogot {
+    float: right;
+  }
+}
